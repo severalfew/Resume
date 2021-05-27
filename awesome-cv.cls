@@ -386,17 +386,17 @@
 %% Define helper macros a user can change easily
 % Header
 \newcommand{\acvHeaderNameDelim}{\space}
-\newcommand{\acvHeaderAfterNameSkip}{.4mm}
-\newcommand{\acvHeaderAfterPositionSkip}{.4mm}
-\newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
+\newcommand{\acvHeaderAfterNameSkip}{0mm}
+\newcommand{\acvHeaderAfterPositionSkip}{0mm}
+\newcommand{\acvHeaderAfterAddressSkip}{0mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand{\acvHeaderAfterSocialSkip}{0mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{1mm}
+\newcommand{\acvHeaderAfterQuoteSkip}{0mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{.5mm}
-\newcommand{\acvSectionContentTopSkip}{.1mm}
+\newcommand{\acvSectionTopSkip}{0mm}
+\newcommand{\acvSectionContentTopSkip}{0mm}
 
 
 %-------------------------------------------------------------------------------
@@ -605,7 +605,7 @@
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
-  \end{tabular*}%
+  \end{tabular*}\par
 }
 
 % Define an environment for cvsubentry
@@ -620,7 +620,7 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-    \setlength\leftskip{0.2cm}
+    \setlength\leftskip{0.02cm}
     \subentrytitlestyle{#1}\\
     \multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#3}} & \subentrydatestyle{#2}\\
   \end{tabular*}
